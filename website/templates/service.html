@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Services {% endblock %}
+{% block content %}
+ <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/1.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Service</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Service</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+  <!-- ***** Services Area Start ***** -->
+  <section class="dento-services-area mt-50 mb-50">
+    <div class="container">
+      <div class="row">
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/s1.png' %}" alt="">
+            </div>
+            <h5>Cyber Risk Awareness Training</h5>
+            <p>Effective cyber security awareness requires Visibility and Accountability, Thus employees need to be engaged in this process to create this culture in organisations</p>
+          </div>
+        </div>
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/s2.png' %}" alt="">
+            </div>
+            <h5>Vulnerability Scanning</h5>
+            <p>Identify, quantify and prioritize vulnerabilities in systems</p>
+          </div>
+        </div>
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/s3.png' %}" alt="">
+            </div>
+            <h5>Web Apps Development</h5>
+            <p>Use django and python in developing applications</p>
+          </div>
+        </div>
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core-img/s4.png' %}" alt="">
+            </div>
+            <h5>Penetration Testing</h5>
+            <p>Evaluate security of organizations' systems by simulating a cyber attack, <strong>only & only</strong> if authorized</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Services Area End ***** -->
+{% endblock %}
